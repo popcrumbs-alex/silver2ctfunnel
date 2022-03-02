@@ -213,7 +213,7 @@ const BodySection = () => {
         "Diamond" That Fools Even Them
       </Tag>
       <StaticImage
-        src="../../images/gold-studs.png"
+        src="../../images/silver-2ct.png"
         alt="gold-studs"
         placeholder="blurred"
         style={{ width: "100%" }}
@@ -301,8 +301,8 @@ const GridContainer = ({
       <Column>
         <ImageContainer>
           <StaticImage
-            src="../../images/etsy.png"
-            alt="gold-studs"
+            src="../../images/silver-box.png"
+            alt="silver-studs"
             placeholder="blurred"
             style={{ width: "100%" }}
             imgStyle={{
@@ -350,7 +350,7 @@ const PictureGrid = ({
     >
       <Column>
         <StaticImage
-          src="../../images/woman.png"
+          src="../../images/testimonial-2.png"
           alt="gold-studs"
           placeholder="blurred"
           style={{ width: "100%", maxWidth: "350px" }}
@@ -409,7 +409,7 @@ const PictureGridTwo = () => {
       </Column>
       <Column>
         <StaticImage
-          src="../../images/ll.png"
+          src="../../images/girl-face.png"
           alt="gold-studs"
           placeholder="blurred"
           style={{ width: "100%", maxWidth: "350px" }}
@@ -440,7 +440,7 @@ const PictureGridThree = ({
           style={{ boxShadow: "0 1px 20px #33333322" }}
         >
           <StaticImage
-            src="../../images/etsy.png"
+            src="../../images/holly.png"
             alt="gold-studs"
             placeholder="blurred"
             style={{ width: "100%", boxShadow: "0 1px 20px #33333322" }}

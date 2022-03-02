@@ -5,7 +5,7 @@ export type Theme = {
 };
 
 export default {
-  main: "#939393",
+  main: "#fd5c56",
   text: "#fefefe",
   danger: "#D62246",
 };

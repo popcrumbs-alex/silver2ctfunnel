@@ -1,6 +1,7 @@
 export default {
-  title: "14k Gold Lab Diamond Earrings",
-  img: "gold-studs.png",
+  title: "We are holding your FREE Lab Diamond Earrings for",
+  img: "silver-2ct.png",
+  funnel_name: "Silver Earrings Funnel",
 };
 
 export type BumpProps = {
@@ -17,6 +18,8 @@ export type BumpProps = {
   isRecurring: boolean;
 };
 
+//info is pulled from shopify
+//id is product id in shopify
 export type SelectedBump = {
   title: string;
   price: number;
@@ -45,33 +48,32 @@ export const orderBumps: Array<BumpProps> = [
   },
   {
     imgSrc:
-      "https://images.clickfunnels.com/f5/10777429e24c45b4548ee5059afabb/signature-lulu-couture-gold-pendants-1_1024x1024-2x.png",
+      "https://images.clickfunnels.com/ff/7daaa1cf4e4256a24c226d5b2f3ce1/Untitled-design---2020-07-09T145011.132.png",
     checkboxHeadline: "Added Bonus: If Checked This Matching Pendant is FREE!",
     otoHeadline: "Become a Part of our Insiders Club and Get This For FREE:",
     otoText:
-      "Every month we curate a different piece of outstanding jewelry and ship it at no obligation to you (Return items you do not like), pieces are made with pure sterling silver, 14k gold or other precious metals. These are pieces that will last a lifetime and grow in value over time. For just $59.95 a month you’ll get first access to our very best pieces, try it for 10 days and get your first piece (14K Gold Vermeil Matching 2CT Pendant) sent at no cost to you",
-    sku: "GOLDPEND",
+      "Every month we curate a different piece of outstanding jewelry and ship it at no obligation to you (Return items you do not like), pieces are made with pure sterling silver, 14k gold or other precious metals. These are pieces that will last a lifetime and grow in value over time. For just $59.95 a month you’ll get first access to our very best pieces, try it for 10 days and get your first piece (Matching 2CT Pendant) sent at no cost to you.",
+    sku: "1CTNECK-1",
     checkboxColor: "#ffe300",
-    orderSummaryText: "Free 2CT Gold Pendant With Insiders Club",
+    orderSummaryText: "Free Silver Stud Pendant With Insiders Club",
     displayPrice: "FREE",
     numPrice: 0,
-    id: 4255185109092,
+    id: 4349439508580,
     isRecurring: true,
   },
   {
     imgSrc:
-      "https://images.clickfunnels.com/b0/b9943eab2048f58e780b4a90b5dd1e/White_15_1024x1024-2x-1-.jpg",
-    checkboxHeadline:
-      "Yes, I Add The 2CT Silver Earrings + Pendant For Only $24",
-    otoHeadline: "{Almost Sold Out} - Discount Ends Soon:",
+      "https://images.clickfunnels.com/85/efd0f76ffb4e7787778d78af1daadf/gold-set.png",
+    checkboxHeadline: "Yes! Add The 14K Gold Vermeil Earring & Pendant Set",
+    otoHeadline: "{Sale] 14K Gold Vermeil Earring and Bracelet Set Only $34:",
     otoText:
-      "On sale today for only $24 more, get our signature Lulu Rose earrings with matching 2CT pendant in sterling silver Vermeil. Purchased separately these cost over $140 but today you get them for only $24 when added on to this order only.",
-    sku: "SEARPEN",
+      "Originally $99.95, Enhance your look with this stunning 14K gold vermeil 2CT pendant and earring set. The sparkle of the individual stones are stunning. This set will only be offered at this deep discounted price through this free earring promotion. Add this to your order today for ONLY $34.",
+    sku: "GOLDEARPEND",
     checkboxColor: "#eeeeee",
-    orderSummaryText: "Silver Earrings and Pendant",
-    displayPrice: "$24.00",
-    numPrice: 24.0,
-    id: 4348189933668,
+    orderSummaryText: "Gold Earrings and Pendant",
+    displayPrice: "$34.00",
+    numPrice: 34.0,
+    id: 4171609604196,
     isRecurring: false,
   },
 ];
@@ -89,34 +91,53 @@ export interface ProductProps {
 
 export const ProductSelectorItems: Array<ProductProps> = [
   {
-    sku: "GOLDEAR",
-    title:
-      "1 - Pair of FREE Gold 2ct Lab Diamond Earrings - (Originally $89.95) - Just Pay $9.98 Shipping",
+    sku: "DVST11",
+    title: "1 Pair of 2CT Ea. Lab Diamond Earrings in .925 Sterling Silver",
     displayPrice: "Free + $9.98 S/H",
     numPrice: 9.98,
     bestDeal: false,
     dealHeadline: undefined,
-    id: 4273995350116,
+    id: 4349401399396,
     isRecurring: false,
   },
   {
-    sku: "3STUDS-custom",
-    title: `3 - Pairs of Lab Diamond Earrings (14K Gold, 14K Rose Gold, Sterling Silver) - Only $27`,
-    displayPrice: "$9/Pair + Free Shipping",
+    sku: "SGCOMBO",
+    title: `2 Pairs of Lab Diamond Earrings: One in .925 Silver + One Pair In Gold Vermeil - (Originally $179.85)`,
+    displayPrice: "$27 + $9.99 S/H",
     numPrice: 27.0,
-    bestDeal: true,
-    dealHeadline: `BEST DEAL`,
-    id: 6550551625920,
-    isRecurring: false,
-  },
-  {
-    sku: "GOLDEAR-5",
-    title: `5 - Pairs of Gold 2ct Lab Diamond Earrings (Originally $475) Over 92% Off - Only $40`,
-    displayPrice: "$8/Ea + Free Shipping",
-    numPrice: 40.0,
     bestDeal: false,
     dealHeadline: undefined,
-    id: 5595271987357,
+    id: 5598578770077,
+    isRecurring: false,
+  },
+  {
+    sku: "3STUDS",
+    title: `3 Pairs of 2CT Lab Diamond Earrings: ( .925 Silver, Gold Vermeil, Rose Gold Vermeil) - (Originally $279.85)`,
+    displayPrice: "$9/ea",
+    numPrice: 27.0,
+    bestDeal: true,
+    dealHeadline: "BEST DEAL",
+    id: 5598601019549,
+    isRecurring: false,
+  },
+  {
+    sku: "6MMStud-11",
+    title: `1CT Ea. Lab Diamond Earrings in .925 Sterling Silver - (Originally $79.95)`,
+    displayPrice: "$8 + 9.95 S/H",
+    numPrice: 17.95,
+    bestDeal: false,
+    dealHeadline: undefined,
+    id: 4349401399396,
+    isRecurring: false,
+  },
+  {
+    sku: "BBNK3SETS",
+    title: `Raid The Vault - Get Our 2Ct Earrings + 2Ct Pendant in Silver, 14 Gold & 14K Rose Gold Vermeil - 3 Sets (MSRP: $289.85)`,
+    displayPrice: "$98 + Free Shipping",
+    numPrice: 98.0,
+    bestDeal: false,
+    dealHeadline: undefined,
+    id: 6098425610432,
     isRecurring: false,
   },
 ];
@@ -145,12 +166,12 @@ export type OtoOptionProps = {
 export const OtoDATA: Array<OTOProps> = [
   {
     imgOrVideoSrc:
-      "https://images.clickfunnels.com/2a/8d7f08b8e74dfab9731ca1f66011ee/IMG_3408.jpg",
-    sku: "6MMGOLD",
+      "https://images.clickfunnels.com/9d/f475f375984ac089d9256d5319f4e8/IMG-3426-Facetune-25-01-2022-16-49-37-jpg.jpg",
+    sku: "6MMStud-1",
     displayPrice: "$10.00",
     numPrice: 10.0,
-    id: 5778303189149,
-    title: "1CT Gold Studs",
+    id: 5281985233053,
+    title: "1CT Silver Studs",
     type: "OTO",
     options: undefined,
   },

@@ -17,6 +17,7 @@ import {
   EF_TRACK_UPSELL,
 } from "../../../graphql/mutations/everflow.mutations";
 import Paypal from "../../orderpage/order-form/Paypal";
+import { FaShoppingCart } from "react-icons/fa";
 
 declare const window: any;
 
@@ -40,17 +41,44 @@ const Heading = styled.h1`
   & span {
     font-weight: 300;
   }
+  @media screen and (max-width: 760px) {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    & span {
+      font-weight: 600;
+    }
+  }
 `;
 
 const Subheading = styled.h3`
   color: #333;
+  @media screen and (max-width: 760px) {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0.2rem;
+  }
 `;
 
 const HeadingTwo = styled.h2`
   font-weight: 100;
   color: #666;
+  @media screen and (max-width: 760px) {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 1rem 0;
+  }
 `;
-
+const Row = styled.div`
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 760px) {
+    flex-direction: column;
+  }
+`;
 const Button = styled.button`
   background-color: #111;
   padding: 1rem 2rem;
@@ -73,10 +101,20 @@ const Button = styled.button`
     cursor: pointer;
     background-color: #333;
   }
+  @media screen and (max-width: 760px) {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 0.2rem;
+    padding: 0.5rem;
+  }
 `;
 
 const Image = styled.img`
   max-width: 350px;
+  @media screen and (max-width: 760px) {
+    max-width: 250px;
+  }
 `;
 
 const Divider = styled.div`
@@ -205,7 +243,7 @@ const OtoScreen = () => {
       {aff_id && <EverflowMutationWrapper aff_id={aff_id} />}
       <Content>
         <Heading>
-          BONUS DEAL: <span>Add The 1CT Gold Studs</span>
+          BONUS DEAL: <span>Add The 1CT Silver Studs</span>
         </Heading>
         <Subheading>
           Get the smaller version of the 2CT for this one time price of only $10
@@ -219,6 +257,20 @@ const OtoScreen = () => {
         />
         <Image src={OtoDATA[currentOtoIndex].imgOrVideoSrc} alt="product" />
         {/* set conditional for paypal button & other payments */}
+        {!orderType && (
+          <Button onClick={() => handleAddOTOToOrder()}>
+            <Row>
+              <FaShoppingCart
+                color="#fff"
+                size={30}
+                style={{ marginRight: "10px" }}
+              />
+              {` `}
+              YES! Add The 1CT Silver Studs For Only $10
+            </Row>{" "}
+            <span>Click Only Once</span>
+          </Button>
+        )}
         {
           {
             paypal: (
@@ -240,7 +292,10 @@ const OtoScreen = () => {
             ),
             credit: (
               <Button onClick={() => handleAddOTOToOrder()}>
-                YES! Add The 1CT Gold Studs For Only $10{" "}
+                <Row>
+                  <FaShoppingCart color="#fff" size={30} />
+                  YES! Add The 1CT Silver Studs For Only $10
+                </Row>
                 <span>Click Only Once</span>
               </Button>
             ),

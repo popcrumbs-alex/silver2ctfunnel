@@ -55,7 +55,7 @@ const Hero = () => {
   return (
     <Container color="#efefef">
       <Content>
-        <Heading>We are holding your FREE {title} for</Heading>
+        <Heading>{title}</Heading>
         <Timer
           timeProps={{ hoursProp: "00", minutesProp: "11", secondsProp: "59" }}
         />
@@ -68,7 +68,7 @@ const Hero = () => {
           Warehouses.
         </SubHeading>
         <StaticImage
-          src="../../../images/gold-2ct-special.png"
+          src={`../../../images/silver-2ct.png`}
           alt={title}
           placeholder="blurred"
           objectFit="contain"
